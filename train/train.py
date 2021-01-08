@@ -67,9 +67,13 @@ def main():
         model_path.mkdir()
         model_path /= 'chatbot_model_000'
     else:
-        last_file = sorted([f.stem for f in model_path.iterdir()], reverse=True)[0]
-        last_ver = int(last_file.split("_")[-1])
-        model_path /= f'chatbot_model_{last_ver:03d}'
+        list_files = sorted([f.stem for f in model_path.iterdir()], reverse=True)
+        if list_files:
+            last_file = list_files[0]
+            last_ver = int(last_file.split("_")[-1])
+            model_path /= f'chatbot_model_{last_ver:03d}'
+        else:
+            model_path /= 'chatbot_model_000'
 
     print("Intents.json")
     il = IntentLoader(data_path)

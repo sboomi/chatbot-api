@@ -1,0 +1,28 @@
+{
+  "name": "chatbot-web",
+  "version": "1.0.0",
+  "description": "A simple web app to use the chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sboomi/chatbot-api.git"
+  },
+  "keywords": [
+    "chatbot",
+    "api"
+  ],
+  "author": "sboomi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sboomi/chatbot-api/issues"
+  },
+  "homepage": "https://github.com/sboomi/chatbot-api#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
