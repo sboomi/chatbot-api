@@ -9,7 +9,18 @@
 <body>
     <h1>A simple chatbot</h1>
 
-    <div id="chatbot"></div>
+    <div id="chatbot">
+        <div id="messages">
+            <div class="userMessageDisplay">My message</div>
+            <div class="botMessageDisplay">Hello I am a bot</div>
+            <div class="userMessageDisplay" id="testUserMsg">test</div>
+            <div class="botMessageDisplay" id="testBotMsg">testbot</div>
+        </div>
+        <div id="submitField">
+            <input type="text" id="userMessage" placeholder="Enter your message">
+            <button id="sendButton">Send!</button>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>

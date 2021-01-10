@@ -1,4 +1,45 @@
+body {
+    background-color: gainsboro;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #chatbot {
+    background-color: white;
     height: 400px;
-    width: 100px;
+    width: 250px;
+    border-color: rgb(77, 62, 62);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.userMessageDisplay {
+    background-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.botMessageDisplay {
+    background-color: purple;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: right;
+    margin: 5px;
+}
+
+#SubmitField {
+    padding: 5px;
+    margin: 5px;
+}
+
+#sendButton {
+    background-color: purple;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
 }
